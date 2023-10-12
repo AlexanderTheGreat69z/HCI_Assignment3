@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <style>
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .container{
+            border: 15px solid white;
+            background-color: black;
+            padding: 20px;
+            animation: trans2 2s ease-out 1;
+            transition: box-shadow 0.25s;
+        }
+
+        img{
+            position: relative;
+            transition: box-shadow 0.25s;
+            width: 100%;
+            height: 100%;
+            border: 15px solid white;
+            animation: trans1 2s ease-in-out 2s 1;
+            animation-fill-mode: both;
+            z-index: -1;
+        }
+
+        .container:hover, img:hover{
+            box-shadow: 0px 0px 50px white;
+        }
+
+        .container:active{
+            box-shadow: 0px 0px 50px cyan;
+        }
+
+        .content{
+            animation: content-appear 2s ease-in-out 2s 1;
+            animation-fill-mode: both;
+        }
+
+        .image, .container{
+            width: 80%;
+            height: max-content;
+            margin: 20px auto;
+        }
+
+        /*********************************************************/
+        .flex-container{
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-container > div{
+            transition: all 0.25s;
+            width: 40%;
+            border-radius: 10px;
+            border: 5px solid white;
+            margin: 20px auto;
+            padding: 10px 20px;
+        }
+
+        .flex-container > div:hover{
+            box-shadow: 0px 0px 20px yellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <audio src="bgm.mp3" type="audio/mp3" autoplay></audio>
+        <div class="image">
+            <img src="profpic.jpeg" alt="Alexander L. Myfia - L1BC">
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="intro">
+                    <h1 style="font-size: 20px;">Alexander Legolas Myfia</h1>
+                    <h3>2702342174 - L1BC</h3>
+                    <p>Hello there, my name is Alexander Legolas Myfia, but you may call me 'Legs'. I am currently pursuing Computer Science in Binus INTERNATIONAL and am looking forward to be the best man in the team and the most cooperative one too. I am familiar with WebDev, Python, and a bit of Java and GameDev, but regardless I am sure that I will know a lot more about computing and programming throughout my college life.</p>
+                </div>
+                <div class="details">
+                    <div class="flex-container">
+                        <div>
+                            <h2><u>My Hobbies</u></h2>
+                            <ul>
+                                <li>Boxing</li>
+                                <li>Working out in the gym (Weight lifting)</li>
+                                <li>Gaming (FPS Games, Single-player Campaign)</li>
+                                <li>Coding / Programming</li>
+                                <li>Maths</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2><u>My Education History</u></h2>
+                            <ol>
+                                <li>BPK Penabur: <a href="https://bpkpenabur.or.id">Link to Homepage</a></li>
+                                <li>Binus INTERNATIONAL: <a href="https://binus.ac.id">Link to Homepage</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div>
+                            <h2><u>My Gender</u></h2>
+                            <input type="radio" name="gender"><label for="gender" checked>Male</label>
+                            <input type="radio" name="gender"><label for="gender">Female</label>
+                        </div>
+                        <div>
+                            <h2><u>My Programming Skills</u></h2>
+                            <input type="checkbox" name="skill"><label for="skill" checked>Software Development</label><br>
+                            <input type="checkbox" name="skill"><label for="skill" checked>Computational Thinking</label><br>
+                            <input type="checkbox" name="skill"><label for="skill" checked>Algorithmic Programming</label><br>
+                            <input type="checkbox" name="skill"><label for="skill" checked>Logical Understanding</label><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="social">
+        <h2><u>More about me in:</u></h2>
+        <br>
+        <ul>
+            <li>Instagram: <a href="http://www.instagram.com/ayy_lex2104">@ayy_lex2104</a></li>
+            <li>Youtube: <a href="https://www.youtube.com/channel/UCxLHcwtOrsbw5KTodeF7gLA">BlueNaxela</a></li>
+        </ul>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

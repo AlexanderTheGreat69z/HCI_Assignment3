@@ -1,0 +1,107 @@
+body{
+    background-image: linear-gradient(to bottom right, rgb(12, 12, 41), black, rgb(31, 31, 73));
+    background-size:  cover;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    width:auto;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+    width: 90%;
+
+    margin: auto;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+/*********************************************************/
+
+footer{
+    position: sticky;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: rgb(31, 31, 73);
+    border-top: 15px solid white;
+    border-bottom: 15px solid rgb(31, 31, 73);
+}
+
+/*********************************************************/
+
+@media(max-width: 331px){
+    body{
+        width: 100%;
+    }
+}
+
+@media(min-width: 502px) and (max-width: 800px){
+    body{
+        width: 100%;
+    }
+}
+
+/*********************************************************/
+
+@media (max-width: 551px) {
+    body{
+        font-size: 10px;
+    }
+    .flex-container div{
+        width: 28%;
+    }
+    .flex-container{
+        font-size: 5px;
+    }
+}
+@media (min-width: 551px) and (max-width: 800px){
+    .flex-container div{
+        width: 35%;
+    }
+    .flex-container{
+        font-size: 10px;
+    }
+}
+
+/*********************************************************/
+
+@keyframes trans1 {
+    from{
+        bottom: 500px;
+        opacity: 0%;
+    }
+    to{
+        bottom: 0px;
+        opacity: 100%;
+    }
+}
+
+@keyframes trans2 {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 45%;
+    }
+}
+
+@keyframes content-appear {
+    from{
+        display: none;
+        opacity: 0;
+    }
+    to{
+        display: inline;
+        opacity: 1;
+    }
+}
