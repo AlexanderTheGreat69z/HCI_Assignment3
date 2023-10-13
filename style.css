@@ -1,6 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom right, rgb(12, 12, 41), black, rgb(31, 31, 73));
-    background-size:  cover;
+    background-color: rgb(10, 10, 34);
     color: #ffffff;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
@@ -39,15 +38,15 @@ footer{
 
 /*********************************************************/
 
-@media(max-width: 331px){
+@media(max-width: 500px){
     body{
-        width: 100%;
+        width: 500px;
     }
 }
 
 @media(min-width: 502px) and (max-width: 800px){
     body{
-        width: 100%;
+        width: 800px;
     }
 }
 
